@@ -1,0 +1,227 @@
+body {background: #1C2855;}
+
+/*初始加载画面*/
+.launch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /*padding: 20%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.launch img {
+    width: 150px;
+}
+
+/*页面主体*/
+#app {
+    position:relative;
+    /*overflow-x: hidden;*/
+}
+nav.main {
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:1rem 100px;
+    z-index:100;
+    -webkit-transition:-webkit-transform .25s ease-in-out;
+    transition:-webkit-transform .25s ease-in-out;
+    transition:transform .25s ease-in-out,-webkit-transform .25s ease-in-out;
+}
+nav.main a {
+    display:block;
+    margin:1.8rem 0 2rem;
+    padding:.5rem 0;
+    text-align:center;
+    font-size:1.15rem;
+    font-weight:300;
+    border:0;
+    border-radius:25px;
+    -webkit-transition:all .5s ease-in-out,background .5s ease-in-out;
+    transition:all .5s ease-in-out,background .5s ease-in-out
+}
+nav.main a svg {
+    vertical-align:middle;
+    width:80px;
+    transition:-webkit-filter .2s ease-in-out
+}
+nav.main a.hero {
+    margin:0;
+    background:transparent!important
+}
+nav.main a.v-link-active {
+    background:#2e57ec;
+    color:#fff!important
+}
+nav.main a:hover {
+    color:#01d2b3
+}
+nav.main a .icon {
+    display:none
+}
+nav.main .columns:last-child a {
+    border:2px solid #2e57ec
+}
+nav.main .columns:last-child a.v-link-active {
+    background:hsla(0,0%,100%,.2);
+    border:1px solid #fff
+}
+nav.main.light nav .hero img {
+     -webkit-filter:brightness(1000%);
+     filter:brightness(1000%)
+}
+.container {
+    margin:0 auto;
+    max-width:1000px
+}
+.hexagon {
+    display:inline-block;
+    position:relative;
+    width:100px;
+    height:57.74px;
+    background-color:transparent;
+    margin:28.87px 0;
+    border-left:3px solid #fff;
+    border-right:3px solid #fff
+}
+.hexagon:after,.hexagon:before {
+    content:"";
+    position:absolute;
+    z-index:1;
+    width:70.71px;
+    height:70.71px;
+    -webkit-transform:scaleY(.5774) rotate(-45deg);
+    -ms-transform:scaleY(.5774) rotate(-45deg);
+    transform:scaleY(.5774) rotate(-45deg);
+    background-color:inherit;
+    left:11.6447px
+}
+.hexagon:before {
+    top:-35.3553px;
+    border-top:4.2426px solid #fff;
+    border-right:4.2426px solid #fff
+}
+.hexagon:after {
+    bottom:-35.3553px;
+    border-bottom:4.2426px solid #fff;
+    border-left:4.2426px solid #fff
+}
+.ripple {
+    position:relative;
+    padding:16px 32px
+}
+.ripple:after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:120px;
+    height:120px;
+    margin-left:-60px;
+    margin-top:-60px;
+    background:-webkit-radial-gradient(#01d2b3,transparent);
+    background:radial-gradient(#01d2b3,transparent);
+    border-radius:100%;
+    opacity:.2;
+    -webkit-transform:scale(0);
+    transform:scale(0)
+}
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    20% {
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+    to {
+        opacity:0;
+        -webkit-transform:scale(1.5);
+        transform:scale(1.5)
+    }
+}
+@keyframes ripple {
+    0% {
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    20% {
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+    to {
+        opacity:0;
+        -webkit-transform:scale(1.5);
+        transform:scale(1.5)
+    }
+}
+.ripple:not(:active):after {
+    -webkit-animation:ripple .3s ease-out;
+    animation:ripple .3s ease-out
+}
+.ripple:focus:after {
+    visibility:visible
+}
+@media (max-width:1020px) {
+    nav.main {
+        padding:1rem 20px
+    }
+}
+@media (max-width:780px) {
+    body {
+        width:100%;
+        overflow-x:hidden!important
+    }
+    nav.main {
+        padding:1rem 5px
+    }
+    nav.main a {
+        margin:10px 0;
+        padding:0;
+        border-radius:0
+    }
+    nav.main a .icon {
+        display:block
+    }
+    nav.main a .text {
+        display:none
+    }
+    nav.main a svg {
+        width:100%;
+        max-width:40px
+    }
+    nav.main a img {
+        width:100%;
+        max-width:30px
+    }
+    nav.main a.v-link-active {
+        background:transparent
+    }
+    nav.main a.v-link-active img {
+        border-bottom:5px solid #2e57ec
+    }
+    nav.main a.hero {
+        margin:5px 0;
+        border-bottom:none
+    }
+    nav.main .columns:last-child a {
+        border:0
+    }
+    nav.main .columns:last-child a.v-link-active {
+        border:0;
+        background:none
+    }
+    .agency,.contact-us,.offers,.projects,.skills,.we-projects {
+        padding-top:100px!important
+    }
+    h1 {
+        font-size:2.5rem
+    }
+}

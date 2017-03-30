@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>We - Offres</title>
+    <style>
+        @keyframes change
+        {
+            0%{transform:rotate(0deg);}
+
+            50%{transform:rotate(180deg);}
+
+            100%{transform:rotate(360deg);}
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/build1.0.css">
+    <link rel="stylesheet" href="css/build2.0.css">
+    <script src="js/walkway.min.js"></script>
+    <script src="js/build.js"></script>
+
+</head>
+<body style="overflow:auto">
+    <!--初始加载画面-->
+    <div class="launch" style="opacity: 1">
+        <img src="svg/wca-logo-short.svg" alt="We Craft Apps" />
+    </div>
+    <!--页面主体-->
+    <section class="main-container" id="app" style="background-color: rgba(255, 255, 255, 0); opacity: 0; display: none">
+        <!--顶部导航-->
+        <nav class="main" id="main-nav">
+            <div class="row small-up-7">
+                <!--Lagence-->
+                <div class="columns">
+                    <a class="ripple" href="agence.html">
+                        <span class="icon"><img src="svg/id-card-2.svg" alt="L'agence"> </span>
+                        <span class="text">L'agence</span>
+                    </a>
+                </div>
+                <!--Expertises-->
+                <div class="columns">
+                    <a class="ripple" href="expertises.html">
+                        <span class="icon"><img src="svg/settings.svg" alt="Expertises"> </span>
+                        <span class="text">Expertises</span>
+                    </a>
+                </div>
+                <!--Offres-->
+                <div class="columns">
+                    <a class="ripple  v-link-active" href="javascript:void(0)">
+                        <span class="icon"><img src="svg/list-1.svg" alt="Offres"> </span>
+                        <span class="text">Offres</span>
+                    </a>
+                </div>
+                <!--Logo-->
+                <div class="columns">
+                    <a class="hero ripple v-link-active" href="index.html">
+                        <svg id="we-logo-short" width="100%" height="100%" viewBox="0 0 154 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421">
+                            <!--Logo白色路径-->
+                            <path id="we-hexagone-white" d="M61.812,3.871l-49.478,28.117c-7.608,4.325 -12.334,12.446 -12.334,21.197l0,54.725c0,8.75 4.726,16.871 12.334,21.196l49.478,28.114c4.545,2.584 9.634,3.872 14.73,3.872c5.09,0 10.185,-1.291 14.726,-3.872l49.476,-28.114c7.608,-4.325 12.334,-12.446 12.334,-21.196l0,-54.725c0,-8.751 -4.726,-16.872 -12.334,-21.197l-49.478,-28.119c-4.542,-2.579 -9.633,-3.869 -14.725,-3.869c-5.092,0 -10.184,1.29 -14.729,3.871ZM66.117,149.647l-49.476,-28.118c-4.89,-2.78 -7.928,-7.999 -7.928,-13.62l0,-54.725c0,-5.621 3.038,-10.84 7.928,-13.621l49.476,-28.114c6.43,-3.652 14.418,-3.652 20.841,0l49.479,28.114c4.89,2.781 7.928,8 7.928,13.621l0,54.725c0,5.621 -3.038,10.84 -7.928,13.62l-49.476,28.115c-3.216,1.827 -6.819,2.74 -10.425,2.74c-3.603,0 -7.206,-0.913 -10.419,-2.737Z" style="fill:white;fill-rule:nonzero;opacity:0"></path>
+                            <!--Logo彩色路径-->
+                            <path id="we-hexagone" d="M61.812,3.871l-49.478,28.117c-7.608,4.325 -12.334,12.446 -12.334,21.197l0,54.725c0,8.75 4.726,16.871 12.334,21.196l49.478,28.114c4.545,2.584 9.634,3.872 14.73,3.872c5.09,0 10.185,-1.291 14.726,-3.872l49.476,-28.114c7.608,-4.325 12.334,-12.446 12.334,-21.196l0,-54.725c0,-8.751 -4.726,-16.872 -12.334,-21.197l-49.478,-28.119c-4.542,-2.579 -9.633,-3.869 -14.725,-3.869c-5.092,0 -10.184,1.29 -14.729,3.871ZM66.117,149.647l-49.476,-28.118c-4.89,-2.78 -7.928,-7.999 -7.928,-13.62l0,-54.725c0,-5.621 3.038,-10.84 7.928,-13.621l49.476,-28.114c6.43,-3.652 14.418,-3.652 20.841,0l49.479,28.114c4.89,2.781 7.928,8 7.928,13.621l0,54.725c0,5.621 -3.038,10.84 -7.928,13.62l-49.476,28.115c-3.216,1.827 -6.819,2.74 -10.425,2.74c-3.603,0 -7.206,-0.913 -10.419,-2.737Z" style="fill:url(#wegrad1);fill-rule:nonzero"></path>
+                            <!--文字路径-->
+                            <path d="M104.162,59.568c-0.271,0 -0.514,0.021 -0.777,0.026l0.011,-0.008c-0.061,0 -0.119,0.013 -0.181,0.014c-12.774,0.332 -16.631,7.683 -17.808,17.582l-0.114,0.951l-1.651,12.541c-0.487,3.165 -1.377,3.974 -3.241,3.974c-1.944,0 -2.755,-0.809 -3.241,-3.974l-3.159,-23.158c-0.891,-6.162 -3.403,-7.948 -8.667,-7.948c-5.672,0 -7.777,2.274 -8.588,7.948l-3.185,23.177c-0.487,3.165 -1.378,3.974 -3.242,3.974c-1.943,0 -2.754,-0.809 -3.241,-3.974l-3.82,-27.866c-0.258,-1.868 -1.853,-3.259 -3.737,-3.259l-1.458,0.088c-1.243,0 -2.197,1.104 -2.019,2.336l4.102,28.969c1.053,7.056 2.019,10.697 10.2,10.697c7.29,0 9.316,-3.892 10.286,-10.786l2.755,-20.931c0.407,-2.754 0.732,-3.404 1.947,-3.404c1.294,0 1.619,0.65 2.023,3.404l2.675,20.931c0.97,6.894 3.078,10.786 10.369,10.786c4.219,0 6.727,-0.96 8.319,-2.829c2.724,1.904 6.77,2.781 12.388,2.781c4.029,0 8.661,-0.595 12.368,-1.732c1.066,-0.327 1.869,-1.283 1.998,-2.36l0.267,-2.473c0.157,-1.313 -0.975,-2.249 -2.284,-1.905c-3.35,0.882 -7.919,1.508 -11.547,1.508c-8.196,0 -11.326,-2.354 -10.621,-8.278l0.145,-1.132l1.154,-9.717l0.001,0l0.099,-0.934c0.656,-5.517 4.422,-8.22 10.508,-8.22c6.089,0 9.141,3.188 8.485,8.705l-0.241,1.785l-10.326,0c-1.614,0 -2.968,1.221 -3.133,2.828l-0.227,2.216c-0.098,0.948 0.646,1.772 1.599,1.772l14.223,0c1.857,0 3.582,-1.399 4.005,-3.244c0.346,-1.505 0.548,-2.997 0.702,-4.059c1.442,-9.95 -3.471,-16.784 -14.121,-16.802" style="fill:#fff;fill-rule:nonzero"></path>
+                            <defs>
+                                <linearGradient id="wegrad1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,172.837,-172.837,0,76.5391,-5.53176)">
+                                    <stop offset="0%" style="stop-color:#21dab0;stop-opacity:1"></stop>
+                                    <stop offset="100%" style="stop-color:#3356ec;stop-opacity:1"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <!--Projets-->
+                <div class="columns">
+                    <a class="ripple" href="projets.html">
+                        <span class="icon"><img src="svg/notebook-1.svg" alt="Projets"> </span>
+                        <span class="text">Projets</span>
+                    </a>
+                </div>
+                <!--Blog-->
+                <div class="columns">
+                    <a class="ripple" href="javascript:void(0)" target="_blank">
+                        <span class="icon"><img src="svg/paper-plane-1.svg" alt="Blog"> </span>
+                        <span class="text">Blog</span>
+                    </a>
+                </div>
+                <!--Contact-->
+                <div class="columns">
+                    <a class="ripple" href="contact.html">
+                        <span class="icon"><img src="svg/placeholder.svg" alt="Contact"> </span>
+                        <span class="text">Contact</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--内容主体-->
+        <div class="fade-transition" style="padding-bottom: 662px;">
+            <!--主要内容-->
+            <section id="page" class="page" data-height="2530" >
+                <section class="offers">
+                    <div class="container">
+                        <!--标题-->
+                        <h1 class="text-center" style="transition: all .2s ease-in-out; opacity: 0; transform: matrix(1, 0, 0, 1, 0, 10);">
+                            Nos offres<br><hr>
+                        </h1>
+                        <!--一排3个ICON-->
+                        <section class="preview-offers">
+                            <div class="row preview-offers">
+                                <!--左icon-->
+                                <div class="columns large-4">
+                                    <!--灯泡SVG-->
+                                    <svg id="lamp1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.1 152.8" style="opacity: 0;">
+                                        <title>lamp1</title>
+                                        <path d="M276.3,179.9h0c0-7.9,3.8-11,10.1-16.4,9.8-8.5,17.1-20.3,17.1-34.3a43,43,0,0,0-43.6-43c-22.7.3-42.1,19.7-42.4,42.4-0.2,14.3,6.7,26.4,17.2,35,6,4.9,9.9,8.4,9.9,16.2" transform="translate(-184.6 -56.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 254.13, 254.13; stroke-dashoffset: 0;"></path>
+                                        <line x1="60.6" y1="133.9" x2="91.1" y2="133.9" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 30.5, 30.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="60.6" y1="142.4" x2="91.1" y2="142.4" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 30.5, 30.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="67.1" y1="150.8" x2="84.7" y2="150.8" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 17.6, 17.6; stroke-dashoffset: 0;"></line>
+                                        <polyline points="75.7 55.6 67.1 80.6 84.4 76.4 75.9 99.5" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 68.8546, 68.8546; stroke-dashoffset: 0;"></polyline>
+                                        <line x1="76.5" y1="16.3" x2="76.5" y2="2" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 14.3, 14.3; stroke-dashoffset: 0;"></line>
+                                        <line x1="133.8" y1="80.1" x2="148.1" y2="80.1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 14.3, 14.3; stroke-dashoffset: 0;"></line>
+                                        <line x1="16.3" y1="80.1" x2="2" y2="80.1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 14.3, 14.3; stroke-dashoffset: 0;"></line>
+                                        <line x1="32.1" y1="36.5" x2="22.1" y2="26.3" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 14.2843, 14.2843; stroke-dashoffset: 0;"></line>
+                                        <line x1="121.1" y1="36.1" x2="131.1" y2="25.9" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 14.2843, 14.2843; stroke-dashoffset: 0;"></line>
+                                        <path d="M254.2,96.9a32.8,32.8,0,0,1,4.5-.6" transform="translate(-184.6 -56.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 4.54347, 4.54347; stroke-dashoffset: 0;"></path>
+                                        <path d="M231.1,115.1a32.9,32.9,0,0,1,12.1-13.7" transform="translate(-184.6 -56.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 18.5221, 18.5221; stroke-dashoffset: 0;"></path>
+                                    </svg>
+                                    <!--标题&文字说明&按钮-->
+                                    <h3>Initier votre projet</h3>
+                                    <p>Vous portez un projet ou souhaitez lancer votre activité ?</p>
+                                    <a href="#" class="button secondary hollow">Voir l’offre</a>
+                                </div>
+                                <!--中icon-->
+                                <div class="columns large-4">
+                                    <!--灯泡SVG-->
+                                    <svg id="lamp2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" style="opacity: 0;">
+                                        <title>lamp2</title>
+                                        <path d="M490,176h0c5.6-5.6,10.5-5,18.7-4.5,13,0.9,26.4-2.3,36.3-12.2a43,43,0,0,0-.4-61.2c-16.3-15.8-43.6-15.8-59.9,0-10.3,10-13.9,23.4-12.6,36.9,0.8,7.7,1,12.9-4.5,18.5" transform="translate(-429.6 -84.3)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 253.939, 253.939; stroke-dashoffset: 0;"></path>
+                                        <line x1="31.1" y1="77.1" x2="52.6" y2="98.6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 30.4056, 30.4056; stroke-dashoffset: 0;"></line>
+                                        <line x1="25.1" y1="83.1" x2="46.6" y2="104.6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 30.4056, 30.4056; stroke-dashoffset: 0;"></line>
+                                        <line x1="23.7" y1="93.6" x2="36.1" y2="106.1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 17.6071, 17.6071; stroke-dashoffset: 0;"></line>
+                                        <polyline points="97.1 32.4 73.4 44 88.5 53.2 66.2 63.5" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 68.6323, 68.6323; stroke-dashoffset: 0;"></polyline>
+                                        <path d="M533,101.7a32.8,32.8,0,0,1,3.6,2.7" transform="translate(-429.6 -84.3)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 4.50352, 4.50352; stroke-dashoffset: 0;"></path>
+                                        <path d="M503.9,98.2a32.9,32.9,0,0,1,18.2-1.2" transform="translate(-429.6 -84.3)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 18.4816, 18.4816; stroke-dashoffset: 0;"></path>
+                                        <line x1="3.9" y1="126.1" x2="2" y2="128" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 2.68701, 2.68701; stroke-dashoffset: 0;"></line>
+                                        <line x1="21.6" y1="108.4" x2="9.8" y2="120.2" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 16.6877, 16.6877; stroke-dashoffset: 0;"></line>
+                                        <line x1="25.9" y1="116.9" x2="19.3" y2="123.4" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 9.26337, 9.26337; stroke-dashoffset: 0;"></line>
+                                        <line x1="12.9" y1="103.9" x2="6.4" y2="110.5" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 9.26337, 9.26337; stroke-dashoffset: 0;"></line>
+                                    </svg>
+                                    <!--标题&文字说明&按钮-->
+                                    <h3>Accélérez votre évolution</h3>
+                                    <p>Vous souhaitez donner un nouveau souffle à votre stratégie digitale ?</p>
+                                    <a href="#" class="button secondary hollow">Voir l’offre</a>
+                                </div>
+                                <!--右icon-->
+                                <div class="columns large-4">
+                                    <!--灯泡svg-->
+                                    <svg id="lamp3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.5 126.9" style="opacity: 0;">
+                                        <title>lamp3</title>
+                                        <line x1="28.5" y1="108" x2="59" y2="108" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 30.5, 30.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="28.5" y1="116.5" x2="59" y2="116.5" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 30.5, 30.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="34.9" y1="124.9" x2="52.5" y2="124.9" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 17.6, 17.6; stroke-dashoffset: 0;"></line>
+                                        <path d="M721.2,179.9c0-12.4-19.2-25.2-19.2-25.2a13.3,13.3,0,0,1-6.7-11.6V113.3a13.3,13.3,0,0,1,6.7-11.6l27-15.3a16.3,16.3,0,0,1,16.1,0l27,15.3a13.3,13.3,0,0,1,6.7,11.6v29.8a13.3,13.3,0,0,1-6.7,11.6s-19.2,12.1-19.2,25.2" transform="translate(-693.3 -82.3)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 260.174, 260.174; stroke-dashoffset: 0;"></path>
+                                        <line x1="36.3" y1="16" x2="38.4" y2="14.8" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 2.41868, 2.41868; stroke-dashoffset: 0;"></line>
+                                        <line x1="16.7" y1="27" x2="27.3" y2="21" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 12.1803, 12.1803; stroke-dashoffset: 0;"></line>
+                                        <polyline points="61.1 61.6 44.5 34.1 27.8 61.6 49.9 61.6" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 86.3954, 86.3954; stroke-dashoffset: 0;"></polyline>
+                                    </svg>
+                                    <!--标题&文字说明&按钮-->
+                                    <h3>Une aide personnalisée</h3>
+                                    <p>Vous cherchez à améliorer un domaine précis ou du renfort sur un projet ?</p>
+                                    <a href="#" class="button primary hollow">Voir l’offre</a>
+                                </div>
+                            </div>
+                        </section>
+                        <!--第一组-->
+                        <section class="offer start">
+                            <div class="row">
+                                <!--左侧svg图像-->
+                                <div class="columns large-5 text-center">
+                                    <!--top_灯泡svg-->
+                                    <svg id="startmeup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.8 174.1" style="opacity: 1; transform: matrix(1.05, 0, 0, 1.05, 0, 0);">
+                                        <title>startmeup</title>
+                                        <path class="lamp" d="M249.9,286.9h0c0-7.9,3.8-11,10.1-16.4,9.8-8.5,17.1-20.3,17.1-34.3a43,43,0,0,0-43.6-43c-22.7.3-42.1,19.7-42.4,42.4-0.2,14.3,6.7,26.4,17.2,35,6,4.9,9.9,8.4,9.9,16.2" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 254.131, 254.131; stroke-dashoffset: 0;"></path>
+                                        <line x1="161.9" y1="133.9" x2="192.3" y2="133.9" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 30.4, 30.4; stroke-dashoffset: 0;"></line>
+                                        <line x1="161.9" y1="142.4" x2="192.3" y2="142.4" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 30.4, 30.4; stroke-dashoffset: 0;"></line>
+                                        <line x1="168.3" y1="150.8" x2="185.9" y2="150.8" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 17.6, 17.6; stroke-dashoffset: 0;"></line>
+                                        <!--灯丝-->
+                                        <polyline id="thunder" points="176.9 55.6 168.4 80.6 185.6 76.4 177.1 99.5" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 68.7251, 68.7251; stroke-dashoffset: 0; opacity: 0.4; transition: opacity .8s ease; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" data-svg-origin="168.39999389648438 55.599998474121094"></polyline>
+                                        <line id="oh1" x1="177.7" y1="16.3" x2="177.7" y2="2" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 14.3, 14.3; stroke-dashoffset: 0; opacity: 1; transition: all .6s ease; transform: translate(0,0);" data-svg-origin="177.6999969482422 2"></line>
+                                        <line id="oh2" x1="153.2" y1="21.8" x2="146.9" y2="15.1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 9.19674, 9.19674; stroke-dashoffset: 0; opacity: 1; transition: all .6s ease; transform: translate(0,0);" data-svg-origin="146.89999389648438 15.100000381469727"></line>
+                                        <line id="oh3" x1="202.5" y1="21.8" x2="208.9" y2="15.1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 9.26553, 9.26553; stroke-dashoffset: 0; opacity: 1; transition: all .6s ease; transform: translate(0,0);" data-svg-origin="202.5 15.100000381469727"></line>
+                                        <path d="M227.8,204a32.8,32.8,0,0,1,4.5-.6" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 4.54346, 4.54346; stroke-dashoffset: 0;"></path>
+                                        <path d="M204.8,222.1a32.9,32.9,0,0,1,12.1-13.7" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 18.5221, 18.5221; stroke-dashoffset: 0;"></path>
+                                        <line x1="345" y1="173.1" x2="347.8" y2="173.1" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.91677px; stroke-dasharray: 2.8, 2.8; stroke-dashoffset: 0;"></line>
+                                        <line x1="1" y1="173.1" x2="338.7" y2="173.1" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.91677px; stroke-dasharray: 337.7, 337.7; stroke-dashoffset: 0;"></line>
+                                        <line x1="110" y1="47.1" x2="110" y2="172.4" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dasharray: 125.3, 125.3; stroke-dashoffset: 0;"></line>
+                                        <line x1="244.6" y1="47.1" x2="244.6" y2="172.4" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dasharray: 125.3, 125.3; stroke-dashoffset: 0;"></line>
+                                        <rect x="127" y="63.7" width="15.3" height="17.33" rx="4.5" ry="4.5" style="fill:#192242;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></rect>
+                                        <line x1="126.7" y1="72.2" x2="110" y2="72.2" style="fill: rgb(25, 34, 66); stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dasharray: 16.7, 16.7; stroke-dashoffset: 0;"></line>
+                                        <rect x="269.2" y="227.2" width="15.3" height="17.33" rx="4.5" ry="4.5" transform="translate(496.8 308.2) rotate(180)" style="fill:#192242;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></rect>
+                                        <line x1="227.8" y1="72.6" x2="244.5" y2="72.6" style="fill: rgb(25, 34, 66); stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dasharray: 16.7, 16.7; stroke-dashoffset: 0;"></line>
+                                        <path d="M147.1,158.2H206a6.1,6.1,0,0,1,6.1,6.1v8.4a0,0,0,0,1,0,0H141a0,0,0,0,1,0,0v-8.4A6.1,6.1,0,0,1,147.1,158.2Z" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dasharray: 165.967, 165.967; stroke-dashoffset: 0;"></path>
+                                        <line x1="185.5" y1="165.3" x2="193.5" y2="165.3" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dasharray: 8, 8; stroke-dashoffset: 0;"></line>
+                                        <line x1="197.8" y1="165.3" x2="197.8" y2="165.3" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></line>
+                                        <rect x="47.6" y="82.6" width="62" height="90.59" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.81614158627312px"></rect>
+                                        <line x1="109.6" y1="82.6" x2="43.3" y2="82.6" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 66.3, 66.3; stroke-dashoffset: 0;"></line>
+                                        <line x1="109.7" y1="131.3" x2="48.7" y2="131.3" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 61, 61; stroke-dashoffset: 0;"></line>
+                                        <circle cx="62.8" cy="101.8" r="5.5" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.81614158627312px"></circle>
+                                        <path d="M129.3,265.3" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></path>
+                                        <path d="M114.3,265.3" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></path>
+                                        <line x1="62.8" y1="101.8" x2="63.7" y2="99.8" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 2.19317, 2.19317; stroke-dashoffset: 0;"></line>
+                                        <line x1="56.7" y1="118.9" x2="101" y2="118.9" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 44.3, 44.3; stroke-dashoffset: 0;"></line>
+                                        <line x1="56.7" y1="118.9" x2="84.9" y2="118.9" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 28.2, 28.2; stroke-dashoffset: 0;"></line>
+                                        <line x1="98.3" y1="141.1" x2="98.3" y2="141.1" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></line>
+                                        <line x1="88.5" y1="141.1" x2="88.5" y2="141.1" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></line>
+                                        <line x1="78.7" y1="141.1" x2="78.7" y2="141.1" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></line>
+                                        <line id="button-start" x1="68.9" y1="141.1" x2="68.9" y2="141.1" style="fill: none; stroke: rgb(44, 103, 229); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></line>
+                                        <line x1="59.1" y1="141.1" x2="59.1" y2="141.1" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px; stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></line>
+                                        <rect x="61.8" y="150.8" width="34.1" height="13.13" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.81614158627312px"></rect>
+                                        <line x1="70.5" y1="155.8" x2="70.5" y2="160.2" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 4.4, 4.4; stroke-dashoffset: 0;"></line>
+                                        <line x1="78.6" y1="155.8" x2="78.6" y2="160.2" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 4.4, 4.4; stroke-dashoffset: 0;"></line>
+                                        <line x1="86.7" y1="155.8" x2="86.7" y2="160.2" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 4.4, 4.4; stroke-dashoffset: 0;"></line>
+                                        <line x1="78.2" y1="97.2" x2="78.2" y2="106.7" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 9.5, 9.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="76.7" y1="104" x2="79.7" y2="104" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 3, 3; stroke-dashoffset: 0;"></line>
+                                        <line x1="89.2" y1="97.2" x2="89.2" y2="106.7" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 9.5, 9.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="87.7" y1="99" x2="90.7" y2="99" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 3, 3; stroke-dashoffset: 0;"></line>
+                                        <line x1="100.2" y1="97.2" x2="100.2" y2="106.7" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 9.5, 9.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="98.7" y1="101" x2="101.7" y2="101" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 3, 3; stroke-dashoffset: 0;"></line>
+                                        <line x1="67.7" y1="82.1" x2="67.7" y2="59.8" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 22.3, 22.3; stroke-dashoffset: 0;"></line>
+                                        <line x1="77.5" y1="82.1" x2="77.5" y2="70.8" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 11.3, 11.3; stroke-dashoffset: 0;"></line>
+                                        <rect x="86.5" y="78.6" width="11.5" height="4" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.81614158627312px"></rect>
+                                        <rect x="244.5" y="128.1" width="42.7" height="44.6" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.64811003742685px"></rect>
+                                        <rect x="252.6" y="122.4" width="27.9" height="5.74" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.76975949852928px"></rect>
+                                        <rect x="252.5" y="96.1" width="28.2" height="22.38" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.64811003742685px"></rect>
+                                        <rect x="261.6" y="118.5" width="9.9" height="3.87" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.64811003742685px"></rect>
+                                        <line x1="255.1" y1="112.8" x2="280.6" y2="112.8" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 25.5, 25.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="266" y1="101.5" x2="272.1" y2="101.5" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.76976px; stroke-dasharray: 6.1, 6.1; stroke-dashoffset: 0;"></line>
+                                        <line x1="261" y1="101.5" x2="262.6" y2="101.5" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.76976px; stroke-dasharray: 1.6, 1.6; stroke-dashoffset: 0;"></line>
+                                        <line x1="271.1" y1="104.8" x2="272.1" y2="104.8" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.76976px; stroke-dasharray: 1, 1; stroke-dashoffset: 0;"></line>
+                                        <line x1="261" y1="104.8" x2="267.6" y2="104.8" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.76976px; stroke-dasharray: 6.6, 6.6; stroke-dashoffset: 0;"></line>
+                                        <line x1="261" y1="108.2" x2="267.1" y2="108.2" style="fill: none; stroke: rgb(51, 86, 236); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.76976px; stroke-dasharray: 6.1, 6.1; stroke-dashoffset: 0;"></line>
+                                        <line x1="244.5" y1="136.8" x2="284.3" y2="136.8" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 39.8, 39.8; stroke-dashoffset: 0;"></line>
+                                        <path d="M361.6,311.1H344.4a5.6,5.6,0,0,0-5.6,5.6v0.5h16.6v-0.5a5.6,5.6,0,0,1,5.6-5.6h6.2a5,5,0,0,0,5-5V288.3" transform="translate(-57 -163.4)" style="fill: rgb(25, 34, 66); stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 84.2507, 84.2507; stroke-dashoffset: 0;"></path>
+                                        <line x1="302.8" y1="151.2" x2="302.8" y2="172.7" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 21.5, 21.5; stroke-dashoffset: 0;"></line>
+                                        <path d="M369.4,335.6h0a4,4,0,0,0-4-4H354.2a4,4,0,0,0-4,4h0" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 23.7682, 23.7682; stroke-dashoffset: 0;"></path>
+                                        <path d="M372.2,291.7v-4.4a3.6,3.6,0,0,0-3.6-3.6h-12a3.6,3.6,0,0,0-3.6,3.6v4.4" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 32.1114, 32.1114; stroke-dashoffset: 0;"></path>
+                                        <path d="M353,291.7v14.6a4.9,4.9,0,0,1-4.9,4.9h0" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 22.298, 22.298; stroke-dashoffset: 0;"></path>
+                                        <line x1="296" y1="128.2" x2="311.7" y2="128.2" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 15.7, 15.7; stroke-dashoffset: 0;"></line>
+                                        <line x1="266" y1="140.3" x2="266" y2="172.7" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 32.4, 32.4; stroke-dashoffset: 0;"></line>
+                                        <line x1="261" y1="151.2" x2="261" y2="158.2" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 7, 7; stroke-dashoffset: 0;"></line>
+                                        <line x1="271.1" y1="151.2" x2="271.1" y2="158.2" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.64811px; stroke-dasharray: 7, 7; stroke-dashoffset: 0;"></line>
+                                        <path d="M104.6,311.1H92.8a3.5,3.5,0,0,0-3.5,3.5h0a3.5,3.5,0,0,0,3.5,3.5h1.6a3.5,3.5,0,0,1,3.5,3.5h0a3.5,3.5,0,0,1-3.5,3.5H83.3" transform="translate(-57 -163.4)" style="fill: none; stroke: rgb(100, 111, 158); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.81614px; stroke-dasharray: 46.4944, 46.4944; stroke-dashoffset: 0;"></path>
+                                        <rect x="22" y="157.4" width="8.6" height="8.62" style="fill:none;stroke:#646f9e;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.81614158627312px"></rect>
+                                    </svg>
+                                    <!--bottom_技能icon*4-->
+                                    <div class="offer-skills">
+                                        <div class="row small-up-2">
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/design.svg" alt="Interface, design, ergonomie"><br>
+                                                <span class="content">Interface, design &amp; ergonomie</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/advice.svg" alt="Conseils, accompagnement"><br>
+                                                <span class="content">Conseils &amp; accompagnement</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/event.svg" alt="Site vitrine évènementiel"><br>
+                                                <span class="content">Site vitrine &amp; évènementiel</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/mobile.svg" alt="Développement mobile"><br>
+                                                <span class="content">Développement<br>mobile</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--右侧文字-->
+                                <div class="columns large-7">
+                                    <h2 class="pop" style="opacity: 0; transform: translate(100px,0); transition: all .6s ease-in-out;">Initier votre projet<br><hr></h2>
+                                    <h3>Vous portez un projet ?</h3>
+                                    <p><em>We Craft Apps</em> vous accompagne dans la mise en place et la réussite de votre projet grâce à des solutions technologiques innovantes et développées sur mesure.<br>Notre objectif est de vous proposer un projet performant respectant votre budget, tout en permettant une évolution facilitée avec la croissance de votre activité.</p>
+                                    <p><u>Exemples :</u></p>
+                                    <div class="row">
+                                        <div class="columns large-6">
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Étude de faisabilité</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Conseils startups</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Identité graphique</p>
+                                        </div>
+                                        <div class="columns large-6">
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Prototype web</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Prototype mobile</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Objets connectés</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--第二组-->
+                        <section class="offer boost">
+                            <div class="row">
+                                <!--左侧&&图-->
+                                <div class="columns large-5 text-center">
+                                    <!--左侧&&顶部灯泡svg-->
+                                    <svg id="boostmeup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.8 143.1" style="opacity: 1; transform: matrix(1.05, 0, 0, 1.05, 0, 0);">
+                                        <title>boostmeup</title>
+                                        <path class="cloud" d="M206.8,108.9H153.1a3.4,3.4,0,1,0,0,6.9h8.8a3.6,3.6,0,0,1,3.6,3.3,3.4,3.4,0,0,1-2.7,3.5H116.1a3.4,3.4,0,0,0,0,6.9h74.1a3.4,3.4,0,1,0,0-6.9H178.5a3.4,3.4,0,0,1,.7-6.8h27.6A3.4,3.4,0,0,0,206.8,108.9Z" style="fill: rgb(100, 111, 158); stroke-dasharray: 286.884, 286.884; stroke-dashoffset: 0; opacity: 0.818466; transform: matrix3d(0.878977, 0, 0, 0, 0, 0.878977, 0, 0, 0, 0, 1, 0, -93.1609, -56.9741, 0, 1); transform-origin: 0px 0px 0px;" data-svg-origin="161.45000839233398 119.20000076293945"></path>
+                                        <path class="cloud" d="M140.4,115.8h0.3a3.4,3.4,0,0,0,0-6.9h-0.3A3.4,3.4,0,1,0,140.4,115.8Z" style="fill: rgb(100, 111, 158); stroke-dasharray: 22.2787, 22.2787; stroke-dashoffset: 0; opacity: 0.818466; transform: matrix3d(0.878977, 0, 0, 0, 0, 0.878977, 0, 0, 0, 0, 1, 0, -95.6908, -57.8031, 0, 1); transform-origin: 0px 0px 0px;" data-svg-origin="140.54523468017578 112.35000228881836"></path>
+                                        <path class="cloud" d="M376.3,207.5h-36a3.4,3.4,0,0,1,.1-6.9H362a3.4,3.4,0,1,0,0-6.9H322.5a3.4,3.4,0,0,1,0-6.9h10.4a3.4,3.4,0,1,0,0-6.9H299.3a3.4,3.4,0,0,0,0,6.9h6.2a3.4,3.4,0,1,1,0,6.9H283.4a3.4,3.4,0,0,0,0,6.9h39.8a3.4,3.4,0,0,1,.1,6.9H312.2a3.4,3.4,0,1,0,0,6.9h64.1A3.4,3.4,0,1,0,376.3,207.5Z" style="fill: rgb(100, 111, 158); stroke-dasharray: 392.803, 392.803; stroke-dashoffset: 0; opacity: 0.818466; transform: matrix3d(0.878977, 0, 0, 0, 0, 0.878977, 0, 0, 0, 0, 1, 0, -72.7807, -47.5404, 0, 1); transform-origin: 0px 0px 0px;" data-svg-origin="329.8499755859375 197.15000915527344"></path>
+                                        <path class="cloud" d="M300.3,207.5h-8.9a3.4,3.4,0,0,0,0,6.9h8.9A3.4,3.4,0,1,0,300.3,207.5Z" style="fill: rgb(100, 111, 158); stroke-dasharray: 39.4801, 39.4801; stroke-dashoffset: 0; opacity: 0.818466; transform: matrix3d(0.878977, 0, 0, 0, 0, 0.878977, 0, 0, 0, 0, 1, 0, -76.8954, -45.8703, 0, 1); transform-origin: 0px 0px 0px;" data-svg-origin="295.8500061035156 210.9499969482422"></path>
+                                        <rect class="cloud" x="240.2" y="39.1" width="28.6" height="6.88" rx="3.4" ry="3.4" style="fill: rgb(100, 111, 158); opacity: 0.818466; transform: matrix3d(0.878977, 0, 0, 0, 0, 0.878977, 0, 0, 0, 0, 1, 0, 30.8003, 5.14831, 0, 1); transform-origin: 0px 0px 0px;" data-svg-origin="254.49999237060547 42.53999900817871"></rect>
+                                        <rect class="cloud" x="227.5" y="39.1" width="7.1" height="6.88" rx="3.4" ry="3.4" style="fill: rgb(100, 111, 158); opacity: 0.818466; transform: matrix3d(0.878977, 0, 0, 0, 0, 0.878977, 0, 0, 0, 0, 1, 0, 27.9623, 5.14831, 0, 1); transform-origin: 0px 0px 0px;" data-svg-origin="231.0500030517578 42.53999900817871"></rect>
+                                        <path class="lamp" d="M252,163.1h0c5.6-5.6,10.5-5,18.7-4.5,13,0.9,26.4-2.3,36.3-12.2a43,43,0,0,0-.4-61.2c-16.3-15.8-43.6-15.8-59.9,0-10.3,10-13.9,23.4-12.6,36.9,0.8,7.7,1,12.9-4.5,18.5" transform="translate(-112.7 -71.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 253.939, 253.939; stroke-dashoffset: 0;"></path>
+                                        <line x1="110" y1="77.1" x2="131.5" y2="98.6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 30.4056, 30.4056; stroke-dashoffset: 0;"></line>
+                                        <line x1="104" y1="83.1" x2="125.5" y2="104.6" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 30.4056, 30.4056; stroke-dashoffset: 0;"></line>
+                                        <line x1="102.5" y1="93.6" x2="115" y2="106.1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 17.6777, 17.6777; stroke-dashoffset: 0;"></line>
+                                        <polyline id="boosthunder" points="176 32.4 152.3 44 167.4 53.2 145.1 63.5" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 68.6322, 68.6322; stroke-dashoffset: 0; transform-origin: 0px 0px 0px; transform: matrix3d(-0.323917, 0.946085, 0, 0, -0.946085, -0.323917, 0, 0, 0, 0, 1, 0, 257.92, -88.4122, 0, 1);" data-svg-origin="160.5500030517578 47.95000076293945"></polyline>
+                                        <path d="M295,88.8a32.8,32.8,0,0,1,3.6,2.7" transform="translate(-112.7 -71.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 4.50354, 4.50354; stroke-dashoffset: 0;"></path>
+                                        <path d="M265.9,85.3a32.9,32.9,0,0,1,18.2-1.2" transform="translate(-112.7 -71.4)" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 18.4816, 18.4816; stroke-dashoffset: 0;"></path>
+                                        <line x1="82.8" y1="126.1" x2="80.9" y2="128" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 2.68701, 2.68701; stroke-dashoffset: 0;"></line>
+                                        <line x1="100.5" y1="108.4" x2="88.7" y2="120.2" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 16.6877, 16.6877; stroke-dashoffset: 0;"></line>
+                                        <line x1="104.8" y1="116.9" x2="98.2" y2="123.4" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 9.26337, 9.26337; stroke-dashoffset: 0;"></line>
+                                        <line x1="91.8" y1="103.9" x2="85.3" y2="110.5" style="fill: none; stroke: rgb(33, 218, 176); stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px; stroke-dasharray: 9.26337, 9.26337; stroke-dashoffset: 0;"></line>
+                                    </svg>
+                                    <!--左侧&&底部图标-->
+                                    <div class="offer-skills">
+                                        <div class="row small-up-2">
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/api.svg" alt="Api"><br>
+                                                <span class="content">API web</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/web.svg" alt="Application web"><br>
+                                                <span class="content">Application web</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/design.svg" alt="Design"><br>
+                                                <span class="content">Interface, design &amp; ergonomie</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/software.svg" alt="Application métier"><br>
+                                                <span class="content">Application métier</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--右侧&&文-->
+                                <div class="columns large-7">
+                                    <h2 class="pop" style=" transition: all .6s ease-in-out; opacity: 0; transform: translate(100px,0);">Accélérez votre évolution<br><hr></h2>
+                                    <h3>Un nouveau souffle à votre stratégie digitale.</h3>
+                                    <p>Après un audit de votre existant, <em>We Craft Apps</em> vous prend en charge et vous propose un panel d’expertises à même de répondre aux problématiques identifiées. Qu’il s’agisse d’évolutions ou de mener une refonte totale, nous mettons ensemble en place une stratégie afin de faire évoluer votre plateforme sans interruption de service.</p>
+                                    <p><u>Exemples :</u></p>
+                                    <div class="row">
+                                        <div class="columns large-6">
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Audit de l'existant</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Interface avec l'ancien système</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Application métier</p>
+                                        </div>
+                                        <div class="columns large-6">
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Refonte application web</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Refonte design</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Application mobile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--第三组-->
+                        <section class="offer help">
+                            <div class="row">
+                                <!--左侧&&图-->
+                                <div class="columns large-5 text-center">
+                                    <!--TOP&&SVG-->
+                                    <svg id="helpmeon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 223 230.7" style="opacity: 1; transform: matrix(1.05, 0, 0, 1.05, 0, 0);">
+                                        <title>helpmeon</title>
+                                        <ellipse cx="115.1" cy="227.9" rx="38" ry="2.8" fill="#121b35" opacity="0.68" style="isolation: isolate"></ellipse>
+                                        <line x1="99.1" y1="181.4" x2="129.6" y2="181.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="stroke-dasharray: 30.5, 30.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="99.1" y1="189.9" x2="129.6" y2="189.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="stroke-dasharray: 30.5, 30.5; stroke-dashoffset: 0;"></line>
+                                        <line x1="105.6" y1="198.3" x2="123.2" y2="198.3" fill="none" stroke="#3356ec" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="stroke-dasharray: 17.6, 17.6; stroke-dashoffset: 0;"></line>
+                                        <path class="lamp" d="M98.4,170.9c0-12.4-19.2-25.2-19.2-25.2a13.3,13.3,0,0,1-6.7-11.6V104.3a13.3,13.3,0,0,1,6.7-11.6l27-15.3a16.3,16.3,0,0,1,16.1,0l27,15.3a13.3,13.3,0,0,1,6.7,11.6v29.8a13.3,13.3,0,0,1-6.7,11.6s-19.2,12.1-19.2,25.2" transform="translate(0.1 0.1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="stroke-dasharray: 260.174, 260.174; stroke-dashoffset: 0;"></path>
+                                        <line x1="106.9" y1="89.4" x2="109" y2="88.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" style="stroke-dasharray: 2.41868, 2.41868; stroke-dashoffset: 0;"></line>
+                                        <g id="arrow style="transition: all .6s ease"">
+                                            <polyline points="183.7 28.3 170.1 55.1 157.3 41.8 146.5 55.1" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="165.0999984741211 41.69999885559082" style="stroke-dasharray: 65.6449, 65.6449; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -8.255, -2.085, 0, 1); transform-origin: 0px 0px 0px;"></polyline>
+                                            <polyline points="174.7 29.3 184.9 26.1 188 36.5" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="181.3499984741211 31.300000190734863" style="stroke-dasharray: 21.5424, 21.5424; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -9.0675, -1.565, 0, 1); transform-origin: 0px 0px 0px;"></polyline>
+                                            <line x1="188.6" y1="18.1" x2="190.2" y2="14.9" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="189.4000015258789 16.5" style="stroke-dasharray: 3.57771, 3.57771; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -9.47, -0.825, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                            <line x1="192.1" y1="23.9" x2="195.2" y2="24.1" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="193.6500015258789 24" style="stroke-dasharray: 3.10644, 3.10644; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -9.6825, -1.2, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                            <line x1="180" y1="16.2" x2="181.9" y2="19.1" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="180.9499969482422 17.65000057220459" style="stroke-dasharray: 3.46699, 3.46699; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -9.0475, -0.8825, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                        </g>
+                                        <g id="mobile style="transition: all .6s ease"">
+                                            <rect x="192.6" y="99.1" width="29.4" height="43.72" rx="3" ry="3" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="207.3000030517578 120.96000289916992" style="stroke: rgb(1, 210, 179); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -10.365, -6.048, 0, 1); transform-origin: 0px 0px 0px;"></rect>
+                                            <line x1="196.5" y1="135" x2="218.1" y2="135" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="207.3000030517578 135" style="stroke-dasharray: 21.6, 21.6; stroke-dashoffset: 0; stroke: rgb(1, 210, 179); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -10.365, -6.75, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                            <line x1="203.9" y1="105.1" x2="209.5" y2="105.1" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="206.6999969482422 105.0999984741211" style="stroke-dasharray: 5.6, 5.6; stroke-dashoffset: 0; stroke: rgb(1, 210, 179); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -10.335, -5.255, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                            <line x1="207.3" y1="139" x2="207.3" y2="139" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="207.3000030517578 139" style="stroke-dasharray: 0, 0; stroke-dashoffset: 0; stroke: rgb(1, 210, 179); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -10.365, -6.95, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                        </g>
+                                        <g id="api style="transition: all .6s ease"">
+                                            <path d="M26.1,140.6l9.8-5.6a6.1,6.1,0,0,0,3.1-5.3V116.1a6.1,6.1,0,0,0-3.1-5.3l-12.3-7a7.4,7.4,0,0,0-7.3,0L4,110.8a6.1,6.1,0,0,0-3.1,5.3v13.4A6.1,6.1,0,0,0,4,134.8l9.9,5.6" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="19.94999921321869 121.71860122680664" style="stroke-dasharray: 111.337, 111.337; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -0.8975, -5.98593, 0, 1); transform-origin: 0px 0px 0px;"></path>
+                                            <line x1="20.1" y1="119.4" x2="20.1" y2="142.9" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="20.100000381469727 131.14999771118164" style="stroke-dasharray: 23.5, 23.5; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -1.005, -6.5575, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                            <polyline points="12.7 126.8 20.1 119.4 27.4 126.8" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="20.049999713897705 123.10000228881836" style="stroke-dasharray: 20.8599, 20.8599; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -1.0025, -6.155, 0, 1); transform-origin: 0px 0px 0px;"></polyline>
+                                            <line x1="20.1" y1="147.1" x2="20.1" y2="147.1" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.19" data-svg-origin="20.100000381469727 147.10000610351562" style="stroke-dasharray: 0, 0; stroke-dashoffset: 0; stroke: rgb(255, 255, 255); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -1.005, -7.355, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                        </g>
+                                        <g id="check" style="transition: all .6s ease">
+                                            <path d="M83.2,18.3A29.8,29.8,0,1,0,60.7,60.2l10.9,4,4-10.9A29.8,29.8,0,0,0,83.2,18.3Z" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="56.12502098083496 32.57650566101074" style="stroke-dasharray: 193.832, 193.832; stroke-dashoffset: 0; stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -2.70625, -1.52883, 0, 1); transform-origin: 0px 0px 0px;"></path>
+                                            <line x1="56.5" y1="27.1" x2="64.3" y2="27.1" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="60.400001525878906 27.100000381469727" style="stroke-dasharray: 7.8, 7.8; stroke-dashoffset: 0; stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -3.02, -1.355, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                            <path d="M48,27.3l8.8-13.8a1.4,1.4,0,0,1,1.9-.4h.1a3.5,3.5,0,0,1,1.2,4l-3.5,10" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="54.10477638244629 20.093536853790283" style="stroke-dasharray: 33.6826, 33.6826; stroke-dashoffset: 0; stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -2.60524, -0.904677, 0, 1); transform-origin: 0px 0px 0px;"></path>
+                                            <rect x="60.6" y="27.1" width="11.3" height="5.41" rx="2.5" ry="2.5" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="66.25 29.805001258850098" style="stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -3.3125, -1.49025, 0, 1); transform-origin: 0px 0px 0px;"></rect>
+                                            <rect x="59.1" y="33" width="11.3" height="5.41" rx="2.5" ry="2.5" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="64.75 35.704999923706055" style="stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -3.2375, -1.78525, 0, 1); transform-origin: 0px 0px 0px;"></rect>
+                                            <rect x="57.9" y="38.7" width="11.3" height="5.41" rx="2.5" ry="2.5" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="63.55000305175781 41.40500068664551" style="stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -3.1775, -2.07025, 0, 1); transform-origin: 0px 0px 0px;"></rect>
+                                            <path d="M48,27.3H41.5v13A3.7,3.7,0,0,0,45.2,44H59.1" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="50.29999923706055 35.64999961853027" style="stroke-dasharray: 39.2128, 39.2128; stroke-dashoffset: 0; stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -2.415, -1.6825, 0, 1); transform-origin: 0px 0px 0px;"></path>
+                                            <line x1="47.9" y1="39.1" x2="48" y2="27.4" fill="none" stroke="#646f9e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-svg-origin="47.95000076293945 33.249999046325684" style="stroke-dasharray: 11.7004, 11.7004; stroke-dashoffset: 0; stroke: rgb(46, 87, 236); transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, -2.3975, -1.6625, 0, 1); transform-origin: 0px 0px 0px;"></line>
+                                        </g>
+                                        <line x1="87.3" y1="100.4" x2="97.9" y2="94.4" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" style="stroke-dasharray: 12.1803, 12.1803; stroke-dashoffset: 0;"></line>
+                                        <polyline id="triangle" points="131.7 135 115.1 107.5 98.4 135 120.5 135" fill="none" stroke="#3356ec" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" data-svg-origin="115.04999923706055 121.25" style="transition: all .6s ease; stroke-dasharray: 86.3954, 86.3954; stroke-dashoffset: 0; stroke: rgb(4, 203, 182); transform: matrix3d(0.905375, 0, 0, 0, 0, 0.905375, 0, 0, 0, 0, 1, 0, 10.8866, 8.63453, 0, 1); transform-origin: 0px 0px 0px;"></polyline>
+                                    </svg>
+                                    <!--BOTTOM&&图标-->
+                                    <div class="offer-skills">
+                                        <div class="row small-up-2">
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/mobile.svg" alt="Développement mobile"><br>
+                                                <span class="content">Application<br>mobile</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/api.svg" alt="Api"><br>
+                                                <span class="content">API web</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/web.svg" alt="Application web"><br>
+                                                <span class="content">Application web</span>
+                                            </div>
+                                            <div class="columns text-center offer-skill">
+                                                <img src="./images/skills/system.svg" alt="Hébergement, système"><br>
+                                                <span class="content">Hébergement &amp; système</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--右侧-->
+                                <div class="columns large-7">
+                                    <h2 class="pop" style="opacity: 0; transform: translate(100px,0); transition: all .6s ease-in-out;">Une aide personnalisée<br><hr></h2>
+                                    <h3>Vous cherchez à améliorer un domaine précis ou du renfort sur un projet ?</h3>
+                                    <p><em>We Craft Apps</em> vous conseille et vous accompagne dans l’optimisation des outils de votre stratégie web et mobile. Nous mettons à votre disposition notre savoir faire pour vous permettre de prendre vos virages stratégiques tout en douceur ! Nos solutions vous permettront de pérenniser votre activité mais aussi de la diversifier.</p>
+                                    <p><u>Exemples :</u></p>
+                                    <div class="row">
+                                        <div class="columns large-6">
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Création d'application mobile</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Développement d'une API web</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Intégration responsive</p>
+                                        </div>
+                                        <div class="columns large-6">
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Régie technique</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Développement web spécifique</p>
+                                            <p><img class="check" src="./images/offers/check.svg" alt=""> Conseils sur l'hébergement</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </section>
+            <!--页尾-->
+            <section id="contact" class="contact">
+                <div class="content" style="height: 662px;">
+                    <h2 id="contactTitle" class="text-center">
+                        <span>C</span>
+                        <span>o</span>
+                        <span>n</span>
+                        <span>t</span>
+                        <span>a</span>
+                        <span>c</span>
+                        <span>t</span>
+                        <span>e</span>
+                        <span>z</span>
+                        <span>-</span>
+                        <span>n</span>
+                        <span>o</span>
+                        <span>u</span>
+                        <span>s</span>
+                        <span>&nbsp;</span>
+                        <span>!</span>
+                    </h2>
+                    <div class="container text-center socials">
+                        <!--TW-->
+                        <a href="javascript:void(0)">
+                            <svg id="twitter" data-name="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.6 94.3">
+                                <title>twitter</title>
+                                <path d="M69.6,31.7H69.5A19.8,19.8,0,0,1,65,36.7a0.9,0.9,0,0,0-.4.9V39c-0.1.8-.1,1.7-0.2,2.5s-0.2,1.5-.3,2.2a30,30,0,0,1-2.3,7.1,29.1,29.1,0,0,1-8.3,10.6,27,27,0,0,1-8,4.4A26.5,26.5,0,0,1,39.7,67l-2.6.2H32.1l-2.5-.4a28.5,28.5,0,0,1-8.8-3.4L20,62.8h4.6l1.8-.3a20.4,20.4,0,0,0,8.3-3.7l0.4-.3a10.1,10.1,0,0,1-9.4-7.1,9.6,9.6,0,0,0,4.4-.2,10.2,10.2,0,0,1-8-10.1,10.2,10.2,0,0,0,4.5,1.2,10.3,10.3,0,0,1-4.2-6.2,10.2,10.2,0,0,1,1.1-7.4,29,29,0,0,0,9.4,7.6,28.8,28.8,0,0,0,11.6,3.1V39.2c-0.1-.5-0.1-0.9-0.2-1.4a8.6,8.6,0,0,1,0-1.2,10.8,10.8,0,0,1,.1-1.4,10.1,10.1,0,0,1,1.1-3.1,10.3,10.3,0,0,1,2.9-3.3,9.2,9.2,0,0,1,2.6-1.4l1.9-.5h3.1a10.4,10.4,0,0,1,3.1,1A10.7,10.7,0,0,1,61.6,30h0.3A20.2,20.2,0,0,0,68,27.8h0.2a10.1,10.1,0,0,1-4.3,5.6h0.9a19.9,19.9,0,0,0,4.3-1.2Z"></path>
+                                <path d="M34.2,67.3h0Z"></path>
+                                <path d="M64.6,37.6c0,0.4,0,.7,0,1.1a2,2,0,0,1,0,.3V37.6Z"></path>
+                                <path d="M44.8,94.3A17.4,17.4,0,0,1,36.2,92L7.2,75.5A14.3,14.3,0,0,1,0,63.1v-32A14.3,14.3,0,0,1,7.2,18.7l29-16.5a17.5,17.5,0,0,1,17.2,0l29,16.5a14.3,14.3,0,0,1,7.2,12.4v32a14.3,14.3,0,0,1-7.2,12.4L53.4,92A17.4,17.4,0,0,1,44.8,94.3ZM51.2,4.7a13,13,0,0,0-12.8,0L8,22a9.6,9.6,0,0,0-4.9,8.4V63.9A9.6,9.6,0,0,0,8,72.3L38.4,89.5a13,13,0,0,0,12.8,0L81.5,72.3a9.6,9.6,0,0,0,4.9-8.4V30.3A9.6,9.6,0,0,0,81.5,22Z"></path>
+                            </svg>
+                        </a>
+                        <!--FB-->
+                        <a href="javascript:void(0)">
+                            <svg id="fb" data-name="fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.6 94.3">
+                                <title>fb</title>
+                                <path d="M44.8,94.3A17.4,17.4,0,0,1,36.2,92L7.2,75.5A14.3,14.3,0,0,1,0,63.1v-32A14.3,14.3,0,0,1,7.2,18.7l29-16.5a17.5,17.5,0,0,1,17.2,0l29,16.5a14.3,14.3,0,0,1,7.2,12.4v32a14.3,14.3,0,0,1-7.2,12.4L53.4,92A17.4,17.4,0,0,1,44.8,94.3ZM51.2,4.7a13,13,0,0,0-12.8,0L8,22a9.6,9.6,0,0,0-4.9,8.4V63.9A9.6,9.6,0,0,0,8,72.3L38.4,89.5a13,13,0,0,0,12.8,0L81.5,72.3a9.6,9.6,0,0,0,4.9-8.4V30.3A9.6,9.6,0,0,0,81.5,22Z"></path>
+                                <path d="M54.5,39.8H47.9V35.5a1.8,1.8,0,0,1,1.8-2h4.7V26.3H47.9c-7.1,0-8.7,5.3-8.7,8.7v4.8H35.1v7.4h4.1V68h8.7V47.1h5.8Z"></path>
+                            </svg>
+                        </a>
+                        <!--mail-->
+                        <a href="javascript:void(0)">
+                            <svg id="mail" data-name="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.6 94.3">
+                                <title>mail</title>
+                                <path d="M44.8,94.3A17.4,17.4,0,0,1,36.2,92L7.2,75.5A14.3,14.3,0,0,1,0,63.1v-32A14.3,14.3,0,0,1,7.2,18.7l29-16.5a17.5,17.5,0,0,1,17.2,0l29,16.5a14.3,14.3,0,0,1,7.2,12.4v32a14.3,14.3,0,0,1-7.2,12.4L53.4,92A17.4,17.4,0,0,1,44.8,94.3ZM51.2,4.7a13,13,0,0,0-12.8,0L8,22a9.6,9.6,0,0,0-4.9,8.4V63.9A9.6,9.6,0,0,0,8,72.3L38.4,89.5a13,13,0,0,0,12.8,0L81.5,72.3a9.6,9.6,0,0,0,4.9-8.4V30.3A9.6,9.6,0,0,0,81.5,22Z"></path>
+                                <path d="M46.5,46.9L63,32.6H26.6L43.1,46.9A2.6,2.6,0,0,0,46.5,46.9Z"></path>
+                                <path d="M48.5,49.2a5.6,5.6,0,0,1-7.4,0L24.4,34.7a2.7,2.7,0,0,0-.1.7V58.9A2.7,2.7,0,0,0,27,61.7H62.5a2.7,2.7,0,0,0,2.7-2.7V35.3a2.7,2.7,0,0,0-.1-0.7Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mentions">
+                        <span>We Craft Apps 2016 - Tous droits réservés -</span>
+                        <span>Website crafted with ❤ in Nantes - <a href="javascript:void(0)">Mentions légales</a></span>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+<script src="js/offres.js"></script>
+</body>
+</html>
